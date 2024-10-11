@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Account Form</title>
+    <link rel="stylesheet" href="lab1.css">
+</head>
+
+<body>
+    <div class="home">
+        <a href="index.html">Home</a>
+    </div>
+    <div class="container">
+        <form id="account-form">
+            <!-- Username -->
+            <label for="username">Username</label>
+            <input type="text" id="username" name="username" maxlength="255" placeholder="Enter your username" required>
+            <div class="error" id="username-error"></div>
+
+            <!-- Password -->
+            <label for="password">Password</label>
+            <input type="password" id="password" name="password" maxlength="255" placeholder="Enter your password"
+                required>
+            <input type="checkbox" id="toggle-password"> Show Password
+            <div class="error" id="password-error"></div>
+
+            <!-- Email Address -->
+            <label for="email">Email Address</label>
+            <input type="email" id="email" name="email" maxlength="255" placeholder="Enter your email" required>
+            <div class="error" id="email-error"></div>
+
+            <!-- Full Name (Optional) -->
+            <label for="full-name">Full Name (Optional)</label>
+            <input type="text" id="full-name" name="full-name" maxlength="255" placeholder="Enter your full name">
+
+            <!-- Role -->
+            <label for="role">Role</label>
+            <select id="role" name="role" required>
+                <option value="">Select a role</option>
+                <option value="admin">Admin</option>
+                <option value="user">User</option>
+                <!-- Other roles can be dynamically populated -->
+            </select>
+            <div class="error" id="role-error"></div>
+
+            <!-- Profile Picture -->
+            <label for="profile-picture">Profile Picture</label>
+            <input type="file" id="profile-picture" accept="image/*">
+            <div class="preview-box" id="image-preview">Preview</div>
+
+            <!-- Account Created At (Read-only) -->
+            <label for="created-at">Account Created At</label>
+            <input type="text" id="created-at" class="readonly" readonly>
+
+            <!-- Last Updated At (Read-only) -->
+            <label for="last-updated-at">Last Updated At</label>
+            <input type="text" id="last-updated-at" class="readonly" readonly>
+
+            <!-- Form Actions -->
+            <div class="actions">
+                <button type="submit" class="primary" id="submit-button" disabled>Create Account</button>
+                <button type="button" class="secondary" id="cancel-button">Cancel</button>
+            </div>
+        </form>
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
