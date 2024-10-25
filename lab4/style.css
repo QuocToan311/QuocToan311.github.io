@@ -1,0 +1,231 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.navbar{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%; 
+    background: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    box-shadow: 0px 0px 10px ;
+    font-size: 14px;
+    z-index: 10;
+}
+nav{
+    padding: 10px 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+nav ul li{
+    display: inline-block;
+    list-style: none;
+    margin: 10px 15px;
+}
+nav ul li::after{
+    content: '';
+    width: 0%;
+    height: 2px;
+    background: #f44336;
+    display: block;
+    margin: auto;
+    transition: 0.3s;
+}
+nav ul li:hover::after{
+    width: 100%;
+}
+nav ul li a{
+    font-weight: bold;
+    text-decoration: none;
+    color: #333;
+}
+.welcome{
+    padding-top: 80px;
+    background: rgb(220, 220, 220);
+    min-height: 200px;
+    margin-bottom: 50px;
+    display: flex;
+    align-items: center;
+}
+.welcome img{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    margin: 30px;
+}
+
+.streak{
+    min-height: 200px;
+    border: 1px solid black; 
+    display: flex;
+    margin: 10px;
+    align-items: center;
+    margin-bottom: 50px;
+}
+.streak .item1{
+    margin-left: 8%;
+    margin-right: 40%;  
+}
+.streak .item2{
+    display: flex;
+    margin-right: 8%;  
+}
+.progress-container {
+    display: flex;
+}
+.progress-ring {
+    position: relative;
+    width: 50px;
+    height: 50px;
+    margin-right: 10px;
+}
+
+.progress-ring circle {
+    fill: transparent;
+    stroke-width: 8;
+}
+
+.progress-ring .background-circle {
+    stroke: #E0E0E0; 
+}
+
+.progress-ring .progress-circle {
+    stroke: #FF9800; 
+    stroke-dasharray: 100;
+    stroke-dashoffset: 0;
+    transition: stroke-dashoffset 0.5s;
+}
+
+.progress-ring .visit-circle {
+    stroke: #009688;
+    stroke-dasharray: 100;
+    stroke-dashoffset: 0;
+    transition: stroke-dashoffset 0.5s;
+}
+.progress-details {
+    display: flex;
+    flex-direction: column;
+    font-size: 14px;
+}
+
+.progress-details .course-min {
+    color: #FF9800;
+    margin-bottom: 4px;
+}
+
+.progress-details .visit-count {
+    color: #009688;
+}
+
+.progress-details .date-range {
+    color: gray;
+    font-size: 12px;
+    margin-top: 4px;
+}
+.section3 .title{ 
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+}
+.section3 button{
+    font-size: 20px;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    padding: 10px;
+}
+.section3 button::after{
+    content: '';
+    width: 0%;
+    height: 2px;
+    background: #f44336;
+    display: block;
+    margin: auto;
+    transition: 0.3s;
+}
+.section3 button:hover::after{
+    width: 100%;
+}
+.card-container {
+    padding: 10px;
+    display: flex; 
+    gap: 10px; 
+    justify-content: space-between; 
+}
+
+.card { 
+    background-color: #fff; 
+    border: 1px solid #ddd; 
+    border-radius: 10px; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    position: relative;
+}
+
+.card img {
+    width: 100%; 
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+.section4{
+    padding: 10px;
+    margin-top: 50px;
+}
+.popup {
+    margin: 40px 5px 5px 5px;
+    border: 2px dashed #666; 
+    padding: 20px;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    position: relative;
+}
+
+.popup .icon {
+    font-size: 40px;
+    color: #f9a825;
+    margin-bottom: 15px;
+}
+
+.popup h2 {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.popup p {
+    font-size: 14px;
+    color: #666;
+    margin-bottom: 20px;
+}
+
+.popup button {
+    background-color: #666;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.popup button:hover {
+    background-color: #f44336;
+}
+
+.popup .close {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 20px;
+    cursor: pointer;
+    color: #666;
+}
