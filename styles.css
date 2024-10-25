@@ -115,31 +115,38 @@ nav ul li a{
 .lab h5{
     padding-left: 70px;
 }
-.row{
-    margin-top: 5%;
+card-container {
+    padding: 10px;
+    display: flex; 
+    gap: 10px; 
+    justify-content: space-between; 
+}
+.card-container {
+    padding: 10px;
+    display: flex; 
+    gap: 10px; 
+    justify-content: space-between; 
+}
+
+.card { 
+
+    border: 1px solid #ddd; 
+    border-radius: 10px; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
     display: flex;
+    flex-direction: column;
     justify-content: space-between;
+    position: relative;
 }
-.lab-col{
-    flex-basis: 31%;
-    border-radius: 10px;
-    margin-bottom: 5%;
-    text-align: left;
+
+.card img {
+    width: 100%; 
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
 }
-.lab-col img{
-    width: 100%;
-    border-radius: 10px;
-    margin-bottom: 20px;
-}
-.lab-col p{
-    padding: 0;
-}
-.lab-col a{
-    margin-top: 16px;
-    margin-bottom: 20px;
-    font-weight: bold;
-    color: #FF4B2B;
-    font-size: 20px;
+.card a{
+    padding: 5px;
+    color: #ff0000;
 }
 /*Receiving comment*/
 .receiving-comment{
