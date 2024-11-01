@@ -1,0 +1,262 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My learning</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <section class="header">
+        <h1>My learning</h1>
+        <div class="info">
+            <span id="timeSpent">0hr 0min watched</span>
+            <span class="info-icon">ℹ️</span>
+            <a href="#" style="color: #ffffff; text-decoration: none;">View all activity</a>
+        </div>
+        <nav>
+            <div class="nav-links">
+                <ul>
+                    <li><a href="../index.html">Home</a></li>
+                    <li><a href="index.html">All courses</a></li>
+                    <li><a href="learningPaths.html">Learning paths</a></li>
+                    <li><a href="">Certifications</a></li>
+                    <li><a href="">Archived</a></li>
+                    <li><a href="">Learning tools</a></li>
+                </ul>
+            </div>
+        </nav>
+    </section>
+
+    <section class="tools">
+        
+        <div class="sort-by">
+            <label for="sort-by">Sort by:</label><br>
+            <select id="sort-by">
+                <option value="recently-accessed">Recently Accessed</option>
+                <option value="option1">option 1</option>
+                <option value="option1">option 2</option>
+                <option value="option1">option 3</option>
+            </select>
+        </div>
+    
+        <div class="filter-by">
+            <label for="filter-by">Filter by:</label><br>
+            <select id="filter-by">
+                <option value="categories">Categories</option>
+                <option value="option1">option 1</option>
+                <option value="option1">option 2</option>
+                <option value="option1">option 3</option>
+            </select>
+            <select id="filter-by">
+                <option value="progress">Progress</option>
+                <option value="option1">option 1</option>
+                <option value="option1">option 2</option>
+                <option value="option1">option 3</option>
+            </select>
+            <select id="filter-by">
+                <option value="instructor">Instructor</option>
+                <option value="option1">option 1</option>
+                <option value="option1">option 2</option>
+                <option value="option1">option 3</option>
+            </select>
+        </div>
+    
+        <button class="reset">Reset</button>
+
+        <form action="" id="search-box">
+            <input type="text" id="searchInput" onkeyup="searchSubject()" placeholder="Search my courses">
+            <button id="search-btn"> <i class="fa-solid fa-magnifying-glass"></i></button>
+        </form>
+    </section>
+
+    <section class="list-course">
+        <div class="container">
+            <div class="card">
+                <img src="Img/img11.jpg" alt="Course 1">
+                <div class="card-content">
+                    <h3>FPT_ISMS Refresh Training S2 2024 (Vietnamese)</h3>
+                    <p>FSOFT Content Development</p>
+                </div>
+                <div class="card-footer">
+                    <div class="completion">100% complete</div>
+                    <div class="rating">
+                        <span class="rating-stars"></span>
+                        <span class="rating-text">Leave a rating</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card">
+                <img src="Img/img16.jpg" alt="Course 2">
+                <div class="card-content">
+                    <h3>The Complete Spring Boot Development Bootcamp</h3>
+                    <p>Learn The Part Inc., Rayan Slim, Jose...</p>
+                </div>
+                <div class="card-footer">
+                    <div class="completion">100% complete</div>
+                    <div class="rating">
+                        <span class="rating-stars"></span>
+                        <span class="rating-text">Leave a rating</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card">
+                <img src="Img/img7.jpg" alt="Course 2">
+                <div class="card-content">
+                    <h3>MuleSorft 4.X Comple Guide For Beginners- hands On...</h3>
+                    <p>China Reddy</p>
+                </div>
+                <div class="card-footer">
+                    <div class="completion">1% complete</div>
+                    <div class="rating">
+                        <span class="rating-stars"></span>
+                        <span class="rating-text">Leave a rating</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card">
+                <img src="Img/img5.jpg" alt="Course 2">
+                <div class="card-content">
+                    <h3>English Vocabulary: 504 Essential Words through 7...</h3>
+                    <p>Mister Rabiey</p>
+                </div>
+                <div class="card-footer">
+                    <div class="completion">100% complete</div>
+                    <div class="rating">
+                        <span class="rating-stars"></span>
+                        <span class="rating-text">Leave a rating</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card">
+                <img src="Img/img29.jpg" alt="Course 2">
+                <div class="card-content">
+                    <h3>Build a Backend REST API with Python & Diango</h3>
+                    <p>Learn The Part Inc., Rayan Slim, Jose...</p>
+                </div>
+                <div class="card-footer">
+                    <div class="completion">100% complete</div>
+                    <div class="rating">
+                        <span class="rating-stars"></span>
+                        <span class="rating-text">Leave a rating</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card">
+                <img src="Img/img26.jpg" alt="Course 2">
+                <div class="card-content">
+                    <h3>ChatGPT Python</h3>
+                    <p>Learn The Part Inc., Rayan Slim, Jose...</p>
+                </div>
+                <div class="card-footer">
+                    <div class="completion">100% complete</div>
+                    <div class="rating">
+                        <span class="rating-stars"></span>
+                        <span class="rating-text">Leave a rating</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card">
+                <img src="Img/img28.jpg" alt="Course 2">
+                <div class="card-content">
+                    <h3>The Complete Spring Boot Development Bootcamp</h3>
+                    <p>Learn The Part Inc., Rayan Slim, Jose...</p>
+                </div>
+                <div class="card-footer">
+                    <div class="completion">100% complete</div>
+                    <div class="rating">
+                        <span class="rating-stars"></span>
+                        <span class="rating-text">Leave a rating</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card">
+                <img src="Img/img6.jpg" alt="Course 2">
+                <div class="card-content">
+                    <h3>The Complete Spring Boot Development Bootcamp</h3>
+                    <p>Learn The Part Inc., Rayan Slim, Jose...</p>
+                </div>
+                <div class="card-footer">
+                    <div class="completion">100% complete</div>
+                    <div class="rating">
+                        <span class="rating-stars"></span>
+                        <span class="rating-text">Leave a rating</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card">
+                <img src="Img/img16.jpg" alt="Course 2">
+                <div class="card-content">
+                    <h3>The Complete Spring Boot Development Bootcamp</h3>
+                    <p>Learn The Part Inc., Rayan Slim, Jose...</p>
+                </div>
+                <div class="card-footer">
+                    <div class="completion">100% complete</div>
+                    <div class="rating">
+                        <span class="rating-stars"></span>
+                        <span class="rating-text">Leave a rating</span>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="card">
+                <img src="Img/img11.jpg" alt="Course 1">
+                <div class="card-content">
+                    <h3>FPT_ISMS Refresh Training S2 2024 (Vietnamese)</h3>
+                    <p>FSOFT Content Development</p>
+                </div>
+                <div class="card-footer">
+                    <div class="completion">100% complete</div>
+                    <div class="rating">
+                        <span class="rating-stars"></span>
+                        <span class="rating-text">Leave a rating</span>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="card">
+                <img src="Img/img5.jpg" alt="Course 2">
+                <div class="card-content">
+                    <h3>English Vocabulary: 504 Essential Words through 7...</h3>
+                    <p>Mister Rabiey</p>
+                </div>
+                <div class="card-footer">
+                    <div class="completion">100% complete</div>
+                    <div class="rating">
+                        <span class="rating-stars"></span>
+                        <span class="rating-text">Leave a rating</span>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="card">
+                <img src="Img/img7.jpg" alt="Course 2">
+                <div class="card-content">
+                    <h3>MuleSorft 4.X Comple Guide For Beginners- hands On...</h3>
+                    <p>China Reddy</p>
+                </div>
+                <div class="card-footer">
+                    <div class="completion">1% complete</div>
+                    <div class="rating">
+                        <span class="rating-stars"></span>
+                        <span class="rating-text">Leave a rating</span>
+                    </div>
+                </div>
+            </div>
+            
+        </div>
+        </section>
+        <script src="script.js"></script>
+    </body>
+    
+    </html>
