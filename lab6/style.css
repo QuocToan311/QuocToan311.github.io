@@ -1,0 +1,411 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: #1b2735;
+    color: white;
+}
+
+.navbar .logo {
+    font-size: 1.5em;
+    font-weight: bold;
+}
+
+.navbar nav a {
+    margin-left: 20px;
+    color: white;
+    text-decoration: none;
+    font-size: 1em;
+}
+
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 50px;
+    background-color: #f4f8fc;
+}
+
+.content {
+    text-align: center;
+    max-width: 600px;
+}
+
+.organization-badge {
+    background: #f0f0f0;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 15px;
+    font-size: 0.8em;
+    color: #666;
+    margin-bottom: 20px;
+}
+
+.content h1 {
+    font-size: 2.5em;
+    color: #00c38a;
+    font-weight: 700;
+}
+
+.content h1 span {
+    color: #333;
+}
+
+.content p {
+    font-size: 1em;
+    color: #666;
+    margin: 20px 0;
+}
+
+.trial-form {
+    display: flex;
+    margin-top: 20px;
+}
+
+.trial-form input {
+    padding: 10px;
+    font-size: 1em;
+    border: 1px solid #ddd;
+    border-radius: 5px 0 0 5px;
+    flex: 1;
+}
+
+.trial-form button {
+    padding: 10px;
+    font-size: 1em;
+    background-color: #00c38a;
+    color: white;
+    border: none;
+    border-radius: 0 5px 5px 0;
+    cursor: pointer;
+}
+
+.learn-more {
+    display: block;
+    margin-top: 20px;
+    color: #666;
+    text-decoration: underline;
+    font-size: 0.9em;
+}
+
+.skills {
+    display: flex;
+    gap: 10px;
+    margin-left: 50px;
+}
+
+.skills-column {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.skills-column span {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 5px 15px;
+    border-radius: 15px;
+    background-color: #f0f0f0;
+    font-size: 0.8em;
+    color: #333;
+}
+.wave-container {
+    background: #f4f8fc;
+}
+
+.tabs {
+    display: flex;
+    justify-content: space-around;
+    background: #f4f8fc;
+}
+
+.tab {
+    padding: 10px 20px;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 20px;
+    transition: background-color 0.3s ease;
+}
+
+.tab:hover {
+    background-color: #d3d3d3;
+}
+
+.card-container{
+    background:#f4f8fc;
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.card {
+    background-color: #fff;
+    width: 300px;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    transition: transform 0.3s ease;
+}
+
+.card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+.card h3 {
+    margin-top: 15px;
+    font-size: 1.1rem;
+    font-weight: 600;
+}
+
+.card p {
+    color: #777;
+    font-size: 0.9rem;
+}
+
+.card span {
+    display: block;
+    margin-top: 10px;
+    color: #f1a800;
+}
+
+.card .price {
+    margin-top: 15px;
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: #333;
+}
+
+.card .btn {
+    margin-top: 15px;
+    background-color: #1b2735;
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+    width: 100%;
+}
+.card-hover {
+    position: absolute;
+    top: 0;
+    left: 320px;
+    width: 100%;
+    height: 100%;
+    background-color: #fff;
+    border-radius: 8px;
+    opacity: 0;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: opacity 0.3s ease;
+    padding: 10px;
+    text-align: left;
+}
+.card-hover .updated {
+    font-size: 0.9rem;
+    color: #555;
+}
+.card-hover .highlight {
+    color: green;
+    font-weight: bold;
+}
+.card-hover .details {
+    font-size: 0.85rem;
+    color: #777;
+    margin-bottom: 12px;
+}
+
+.card-hover .description {
+    font-size: 0.9rem;
+    color: #333;
+    margin-bottom: 12px;
+}
+
+.features {
+    list-style-type: none;
+    font-size: 0.85rem;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.features li {
+    margin-bottom: 8px;
+    display: flex;
+    align-items: center;
+}
+
+.add-to-cart {
+    background-color: #6a0dad;
+    color: white;
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    font-weight: bold;
+    cursor: pointer;
+    text-align: center;
+}
+
+.add-to-cart:hover {
+    background-color: #5e0cac;
+}
+
+.card .btn:hover {
+    background-color: #3c4b60;
+}
+
+.card:hover {
+    transform: translateY(-10px);
+}
+.card:hover .card-hover {
+    opacity: 1;
+}
+.learning-section {
+    display: flex;
+    gap: 40px;
+    width: 100%;
+    padding: 20px;
+    background: #f4f8fc;
+}
+
+.learning-goals {
+    width: 45%;
+}
+
+.learning-goals h2 {
+    font-size: 1.8rem;
+    margin-bottom: 20px;
+}
+
+.goal-card {
+    display: flex;
+    align-items: flex-start;
+    gap: 15px;
+    padding: 20px;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    margin-bottom: 15px;
+    transition: border 0.3s;
+    cursor: pointer;
+}
+
+.goal-card.active {
+    border-left: 3px solid #7b2cbf;
+}
+
+.goal-card .icon {
+    font-size: 1.5rem;
+}
+
+.goal-card h3 {
+    font-size: 1.2rem;
+    margin-bottom: 5px;
+}
+
+.goal-card p {
+    font-size: 0.95rem;
+    color: #555;
+}
+
+.badge {
+    background-color: #ddd;
+    color: #333;
+    font-size: 0.8rem;
+    padding: 2px 6px;
+    border-radius: 4px;
+    margin-left: 8px;
+}
+
+.goal-card a {
+    color: #7b2cbf;
+    font-size: 0.9rem;
+    text-decoration: none;
+}
+
+.assessment{
+    width: 45%;
+    padding: 20px;
+}
+
+.browser-mockup {
+    background-color: #fff;
+    border-radius: 12px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    border: 1px solid #ddd;
+}
+
+.browser-mockup .header {
+    display: flex;
+    gap: 6px;
+    margin-bottom: 10px;
+}
+
+.browser-mockup .dot {
+    width: 10px;
+    height: 10px;
+    background-color: #ccc;
+    border-radius: 50%;
+}
+
+.browser-mockup h3 {
+    font-size: 1.2rem;
+    color: #333;
+    margin-bottom: 5px;
+}
+
+.browser-mockup p {
+    font-size: 0.95rem;
+    color: #555;
+}
+
+.score h4 {
+    font-size: 1.5rem;
+    color: #7b2cbf;
+    margin: 10px 0;
+}
+
+.score img {
+    max-width: 100%;
+    height: auto;
+    margin-top: 10px;
+}
+table {
+    width: 100%;
+    border-collapse: collapse;
+    border: 1px solid #ddd;
+}
+
+thead {
+    background-color: #f0f0f0;
+}
+
+th, td {
+    padding: 12px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+}
+
+th {
+    font-weight: bold;
+    color: #333;
+}
+.note-btn{
+  padding: 10px;
+}
