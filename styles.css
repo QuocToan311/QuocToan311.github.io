@@ -1,8 +1,7 @@
-*{
+body{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     background: #f5f5dc;
 }
 .hero{
@@ -16,31 +15,22 @@
 .navbar{
     position: fixed;
     top: 0;
-    left: 0;
+    left: 20px;
     width: 100%; 
     background-color: #f5f5dc;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
+    display: block;
     padding: 10px 0;
 }
-nav{
-    padding: 10px 0;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
+.navbar-nav{
+    flex-direction: row;
+    gap: 3vh;
+    font-size: 20px;
 }
-nav ul li{
-    display: inline-block;
-    list-style: none;
-    margin: 10px 15px;
-    background-color: #FF4B2B;
+.navbar-nav a.active{
+    text-decoration: underline;
+    color: rgb(0, 0, 0);
 }
-nav ul li a{
-    font-weight: bold;
-    text-decoration: none;
-    color: #333;
-}
+
 .login-btn{
     text-decoration: none;
     color: #333;
@@ -83,10 +73,6 @@ nav ul li a{
     padding-left: 170px;
     font-size: 50px;
 }
-.about h5{
-    padding-left: 170px;
-    padding-bottom: 50px;
-}
 .about-me{
     display: flex;
     padding-top: 30px;
@@ -101,21 +87,67 @@ nav ul li a{
     background: #FFFFFF;
     max-width: 100vh;
 }
+.intro {
+    display: flex;
+    align-items: center;
+    margin-bottom: 50px;
+}
+
+.intro img {
+    border-radius: 10px;
+    width: 200px;
+    height: auto;
+    margin-right: 20px;
+}
+.skills {
+    margin-top: 30px;
+}
+
+.skills h2 {
+    margin-bottom: 20px;
+}
+
+.skill-bar {
+    margin-bottom: 15px;
+}
+
+.skill-bar span {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.progress {
+    background-color: #f0f0f0;
+    border-radius: 5px;
+    overflow: hidden;
+    position: relative;
+    height: 20px;
+}
+
+.progress div {
+    height: 100%;
+    background-color: #007bff;
+    text-align: right;
+    padding-right: 5px;
+    box-sizing: border-box;
+    color: white;
+    line-height: 20px;
+    white-space: nowrap;
+}
 /* ----lab---- */
 .lab{
     width: 80%;
     margin: auto;
-    padding-top: 100px;
 }
 .lab h1{
+    padding-top: 70px;
     width: fit-content;
-    padding-left: 70px;
+    text-align: center;
     font-size: 50px;
 }
-.lab h5{
-    padding-left: 70px;
-}
-card-container {
+
+.card-container {
     padding: 10px;
     display: flex; 
     gap: 10px; 
@@ -148,6 +180,38 @@ card-container {
     padding: 5px;
     color: #ff0000;
 }
+/* Result */
+.result h1{
+    padding-top: 70px;
+    width: fit-content;
+    text-align: center;
+    padding-left: 170px;
+    font-size: 50px;
+}
+.results {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+.results div {
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    flex: 1;
+    max-width: 60vh;
+}
+.results h2 {
+    color: #d32f2f;
+    margin-bottom: 15px;
+}
+.results ul {
+    list-style-type: none;
+    padding: 0;
+}
+.results li {
+    margin-bottom: 10px;
+}
 /*Receiving comment*/
 .receiving-comment{
     margin: 100px auto;
@@ -158,6 +222,7 @@ card-container {
     border-radius: 10px;
     text-align: center;
     padding: 100px 0;
+    background-color: #f5f5dc;
 }
 .receiving-comment h1{
     color: #ff0000;
@@ -171,11 +236,5 @@ card-container {
 /* footer */
 .footer{
     width: 100%;
-    text-align: center;
-    padding: 30px 0;
-}
-.footer h4{
-    margin-bottom: 25px;
-    margin-top: 20px;
-    font-weight: 600;
+    padding: 30px 30px;
 }
