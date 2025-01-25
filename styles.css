@@ -227,7 +227,10 @@ body {
     border-radius: 8px;
     z-index: 1000;
   }
-
+.popup .design{
+    display: flex;
+    gap: 3px;
+}
 
   .overlay {
     display: none; 
